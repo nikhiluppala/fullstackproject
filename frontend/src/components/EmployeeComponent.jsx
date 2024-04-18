@@ -85,6 +85,8 @@ const EmployeeComponent = () => {
      return <h2 className="text-center">Add Employee</h2>
     }
   }
+
+  
   return (
     <div className="container">
       <br /> <br />
@@ -136,6 +138,11 @@ const EmployeeComponent = () => {
 
               <button className="btn btn-success" onClick={saveOrUpdateEmployee}>
                 Submit
+              </button>
+              <button className="btn btn-success" onClick={() => {navigator('/employees')}}
+              style={{marginLeft: '10px'}}
+              >
+                Cancel
               </button>
             </form>
           </div>
